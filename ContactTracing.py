@@ -6,3 +6,6 @@ print(" 2 -> Exit (y/n)")
 
 #Allow user to select item in the menu (check if valid)
 option = int(input("Choose in the menu 1-3: "))
+
+#Perform the selected option
+option_1 = float(input("Full name: "))
