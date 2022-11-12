@@ -12,5 +12,8 @@ option = int(input("Choose in the menu 1-3: "))
 
 #Perform the selected option
 option_1keys = float(input("Full name: "))
-option_1values = int(input("Phone number"))
+option_1values = int(input("Phone number: "))
 
+option_2 = float(input("Enter Full name: "))
+
+option_3 = float(input("You want to exit or retry? "))
