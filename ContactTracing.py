@@ -5,11 +5,10 @@ print(" 2 -> Search")
 print(" 2 -> Exit (y/n)")
 
 #Dictionary
-Dictionary = {
-    "Uriel Esmeralda": "09321313211",
-    "Juan Luna": "0912312141",
-    "Jeriko Rosales": "093122234"
-}
+Dictionary = {}
+
+Address = {}
+PhoneNum = {}
 
 #Option Function
 while True:
@@ -18,9 +17,13 @@ while True:
     if option == 1:
         #Perform the selected option
         option_1keys = input("Full name: ")
-        option_1values = int(input("Phone number: "))
-        Dictionary[option_1keys] = option_1values
-        print("This is the new Contact List: ", Dictionary)
+        option_1address = input("Address: ")
+        Address[option_1keys] = option_1address
+        option_1number = int(input("Phone number: "))
+        PhoneNum[option_1keys] = option_1number
+        print(Address)
+        print(PhoneNum)
+        print("\nSaved!")
 
     elif option == 2:
         option_2 = input("\nEnter Full name: ")
