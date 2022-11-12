@@ -17,14 +17,14 @@ while True:
     option = int(input("Choose in the menu 1-3: "))
     if option == 1:
         #Perform the selected option
-        option_1keys = float(input("Full name: "))
-        option_1values = int(input("Phone number: "))
+        option_1keys = input("Full name: ")
+        option_1values = input("Phone number: ")
         Dictionary.append(option_1keys, ":", option_1values)
         print("This is the new Contact List: ", Dictionary)
 
     elif option == 2:
-        option_2 = float(input("Enter Full name: "))
+        option_2 = input("Enter Full name: ")
 
     elif option == 3:
-        option_3 = float(input("You want to exit or retry? "))
+        option_3 = input("You want to exit or retry? ")
 
