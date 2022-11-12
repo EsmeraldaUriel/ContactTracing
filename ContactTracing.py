@@ -10,7 +10,7 @@ while True:
     print("\n==========MENU==========")
     print(" 1 -> Add an item")
     print(" 2 -> Search")
-    print(" 2 -> Exit (y/n)")
+    print(" 3 -> Exit (y/n)")
     print("=========================")
 
     #Allow user to select item in the menu (check if valid)
@@ -38,8 +38,10 @@ while True:
 
     elif option == 3:
         option_3 = input("\nYou want to exit (y or n)? ")
-        if option_3 == "n" or "N":
+        if option_3 == 'n' and 'N':
             continue
-        else:
+        elif option_3 == 'y' and 'Y':
             break
+
+
 
