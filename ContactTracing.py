@@ -3,12 +3,12 @@ print("==========MENU==========")
 print(" 1 -> Add on item")
 print(" 2 -> Search")
 print(" 2 -> Exit (y/n)")
+print("=========================")
 
 #Dictionary
-Dictionary = {}
-
 Address = {}
 PhoneNum = {}
+Age = {}
 
 #Option Function
 while True:
@@ -17,8 +17,10 @@ while True:
     if option == 1:
         #Perform the selected option
         option_1keys = input("Full name: ")
-        option_1address = input("Address: ")
+        option_1address = str(input("Address: "))
         Address[option_1keys] = option_1address
+        option_1age = int(input("Age: "))
+        Age[option_1keys] = option_1age
         option_1number = int(input("Phone number: "))
         PhoneNum[option_1keys] = option_1number
         print("\nSaved!")
@@ -28,6 +30,8 @@ while True:
         if option_2 in Address:
             print("Full Name:", option_2,
                   "\nAddress:", Address[option_2])
+        if option_2 in Age:
+            print("Age: ", Age[option_2])
         if option_2 in PhoneNum:
             print("Phone Number:", PhoneNum[option_2])
 
@@ -35,6 +39,6 @@ while True:
         option_3 = input("\nYou want to exit (y or n)? ")
         if option_3 == "n" or "N":
             continue
-        elif option_3 == "y" or "Y":
+        else:
             break
 
