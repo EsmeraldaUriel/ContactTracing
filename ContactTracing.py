@@ -32,10 +32,10 @@ while True:
                   "\nAddress:", Address[option_2])
             if option_2 in Age:
                 print("Age: ", Age[option_2])
-                if option_2 in PhoneNum:
-                    print("Phone Number:", PhoneNum[option_2])
-                else:
-                    print("The Contact is Not Existing")
+            elif option_2 in PhoneNum:
+                print("Phone Number:", PhoneNum[option_2])
+        else:
+            print("The Contact is Not Existing")
     elif option == 3:
         option_3 = input("\nYou want to exit (y or n)? ")
         if option_3 == 'n' and 'N':
