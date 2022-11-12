@@ -21,12 +21,15 @@ while True:
         Address[option_1keys] = option_1address
         option_1number = int(input("Phone number: "))
         PhoneNum[option_1keys] = option_1number
-        print(Address)
-        print(PhoneNum)
         print("\nSaved!")
 
     elif option == 2:
         option_2 = input("\nEnter Full name: ")
+        for key in Address:
+            print("Full Name:", key,
+                  "\nAddress:", Address[key])
+        for key in PhoneNum:
+            print("Phone Number:", PhoneNum[key])
 
     elif option == 3:
         option_3 = input("\nYou want to exit or retry? ")
