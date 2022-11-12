@@ -5,7 +5,11 @@ print(" 2 -> Search")
 print(" 2 -> Exit (y/n)")
 
 #Dictionary
-Dictionary = {}
+Dictionary = {
+    "Uriel Esmeralda": "09321313211",
+    "Juan Luna": "0912312141",
+    "Jeriko Rosales": "093122234"
+}
 
 #Option Function
 while True:
