@@ -19,6 +19,8 @@ while True:
         #Perform the selected option
         option_1keys = float(input("Full name: "))
         option_1values = int(input("Phone number: "))
+        Dictionary.append(option_1keys, ":", option_1values)
+        print("This is the new Contact List: ", Dictionary)
 
     elif option == 2:
         option_2 = float(input("Enter Full name: "))
