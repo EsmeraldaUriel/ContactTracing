@@ -18,8 +18,8 @@ while True:
     if option == 1:
         #Perform the selected option
         option_1keys = input("Full name: ")
-        option_1values = input("Phone number: ")
-        Dictionary.append(option_1keys, ":", option_1values)
+        option_1values = int(input("Phone number: "))
+        Dictionary[option_1keys] = option_1values
         print("This is the new Contact List: ", Dictionary)
 
     elif option == 2:
