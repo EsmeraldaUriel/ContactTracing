@@ -25,11 +25,11 @@ while True:
 
     elif option == 2:
         option_2 = input("\nEnter Full name: ")
-        for key in Address:
-            print("Full Name:", key,
-                  "\nAddress:", Address[key])
-        for key in PhoneNum:
-            print("Phone Number:", PhoneNum[key])
+        if option_2 in Address:
+            print("Full Name:", option_2,
+                  "\nAddress:", Address[option_2])
+        if option_2 in PhoneNum:
+            print("Phone Number:", PhoneNum[option_2])
 
     elif option == 3:
         option_3 = input("\nYou want to exit (y or n)? ")
