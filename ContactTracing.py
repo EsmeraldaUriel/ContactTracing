@@ -11,4 +11,6 @@ Dictionary = {}
 option = int(input("Choose in the menu 1-3: "))
 
 #Perform the selected option
-option_1 = float(input("Full name: "))
+option_1keys = float(input("Full name: "))
+option_1values = int(input("Phone number"))
+
