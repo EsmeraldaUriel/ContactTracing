@@ -14,7 +14,7 @@ Dictionary = {
 #Option Function
 while True:
     #Allow user to select item in the menu (check if valid)
-    option = int(input("Choose in the menu 1-3: "))
+    option = int(input("\nChoose in the menu 1-3: "))
     if option == 1:
         #Perform the selected option
         option_1keys = input("Full name: ")
@@ -23,8 +23,8 @@ while True:
         print("This is the new Contact List: ", Dictionary)
 
     elif option == 2:
-        option_2 = input("Enter Full name: ")
+        option_2 = input("\nEnter Full name: ")
 
     elif option == 3:
-        option_3 = input("You want to exit or retry? ")
+        option_3 = input("\nYou want to exit or retry? ")
 
