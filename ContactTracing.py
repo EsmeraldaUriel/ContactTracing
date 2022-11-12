@@ -32,5 +32,9 @@ while True:
             print("Phone Number:", PhoneNum[key])
 
     elif option == 3:
-        option_3 = input("\nYou want to exit or retry? ")
+        option_3 = input("\nYou want to exit (y or n)? ")
+        if option_3 == "n" or "N":
+            continue
+        elif option_3 == "y" or "Y":
+            break
 
